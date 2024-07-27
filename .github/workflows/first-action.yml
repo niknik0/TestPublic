@@ -7,4 +7,6 @@ jobs:
      - name: Print greeting
        run: echo "Hello world"
      - name: Print goodbye
-       run: echo "Goodbye"
+       run: |  # Pipe allows to run multiple shell commands
+         echo "Goodbye"
+         echo "Goodbye again"
