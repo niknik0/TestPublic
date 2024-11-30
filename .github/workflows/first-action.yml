@@ -1,5 +1,7 @@
 name: First Workflow
-on: workflow_dispatch # Event that will trigger this workflow, this one requires user to manually start the workflow
+on: 
+  workflow_dispatch:
+  push:  # Event that will trigger this workflow, this one requires user to manually start the workflow
 jobs: 
  first-job:
    runs-on: ubuntu-latest
