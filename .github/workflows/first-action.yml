@@ -3,7 +3,8 @@ on: workflow_dispatch # Event that will trigger this workflow, this one requires
 jobs: 
  first-job:
    runs-on: ubuntu-latest
-   steps: 
+   steps:
+     - uses: actions/checkout@v2
      - name: Print greeting
        run: echo "Hello world"
      - name: Print goodbye
